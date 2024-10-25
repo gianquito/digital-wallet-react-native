@@ -1,0 +1,47 @@
+{
+    "expo": {
+        "name": "digital-wallet",
+        "slug": "digital-wallet",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#ffffff"
+            },
+            "permissions": ["android.permission.CAMERA", "android.permission.RECORD_AUDIO"],
+            "package": "com.gianquito.digitalwallet"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png",
+            "bundler": "metro"
+        },
+        "plugins": [
+            "expo-font",
+            [
+                "expo-camera",
+                {
+                    "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
+                }
+            ],
+            "expo-router",
+            "expo-build-properties"
+        ],
+        "assetBundlePatterns": ["assets/fonts/*"],
+        "extra": {
+            "eas": {
+                "projectId": "51411110-eafa-4233-9bf2-8cc8e2a91435"
+            }
+        }
+    }
+}
